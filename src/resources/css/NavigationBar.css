@@ -1,0 +1,41 @@
+nav ul {
+    width: 500px;
+    height: 75px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+}
+
+nav li {
+
+}
+
+nav a {
+    display: flex;
+    margin-left: 20px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+nav a:hover {
+    color: rgb(0, 200, 190);
+}
+
+@media only screen and (max-width: 1200px) {
+    nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    nav ul {
+
+    }
+}
+

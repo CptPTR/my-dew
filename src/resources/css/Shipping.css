@@ -1,0 +1,20 @@
+.shipping {
+    position: relative;
+    border: none;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    /* background-color: rgb(243, 243, 243); */
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.shipping p {
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding: 10px;
+    text-transform: uppercase;
+}

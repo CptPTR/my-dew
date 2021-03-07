@@ -1,0 +1,7 @@
+.lang-button {
+    cursor: pointer;
+}
+
+.lang-button:hover {
+    color: rgb(0, 200, 190);
+}

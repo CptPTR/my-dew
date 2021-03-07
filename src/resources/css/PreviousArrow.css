@@ -1,0 +1,14 @@
+.prev-btn {
+    cursor: pointer;
+    position: absolute;
+    padding: 20px;
+    margin-left: 10px;
+    z-index: 100;
+    top: 50%;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.prev-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}

@@ -1,0 +1,115 @@
+footer {
+  color: rgb(241, 230, 208);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer-content {
+  padding: 25px 50px;
+  width: auto;
+  margin: 0 100px;
+  color: #000;
+  transition: all 0.2s ease-in;
+}
+
+.footer-content > * {
+  height: 130px;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.social-media-links {
+  display: flex;
+}
+
+.footer-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 10px 0;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.footer-nav a {
+  display: block;
+  padding-right: 20px;
+  font-size: 1.7em;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-nav a:hover {
+  color: rgb(0, 200, 190);
+}
+
+.logo-DEW {
+  transition: all 0.2s ease-in;
+}
+
+@media only screen and (max-width: 1550px) {
+  .footer-nav,
+  .footer-row {
+    width: 100%;
+    display: flex;
+  }
+
+  .footer-nav {
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .footer-content {
+    margin: 0 20px;
+  }
+
+  .footer-nav ul {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .footer-nav ul {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-nav li {
+    margin-bottom: 25px;
+  }
+
+  .footer-nav a {
+    padding: 0;
+    width: 50vw;
+    text-align: center;
+  }
+
+  .logo-DEW {
+    margin: 50px auto;
+  }
+
+  .footer-content > * {
+    height: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .footer-content {
+    margin: 0;
+  }
+}

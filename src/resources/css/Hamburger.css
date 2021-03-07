@@ -1,0 +1,80 @@
+.hamburger-container {
+    flex: 0 0 100%;
+}
+
+.hamburger {
+    margin: 0 15px;
+    display: none;
+    height: 20px;
+}
+
+.cross {
+    margin: 0 15px;
+    display: none;
+    height: 20px;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.cross:hover {
+    cursor: pointer;
+}
+
+.hamburger:before,
+.hamburger:after,
+.hamburger div {
+    content: '';
+    display: block;
+    height: 3px;
+    margin: 4px 0;
+    background-color: #000;
+    transition: all .2s ease-in-out;
+}
+
+.cross:before,
+.cross:after,
+.cross div {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 4px 0;
+    background-color: #000;
+    transition: all .2s ease-in-out;
+}
+
+.cross div {
+    transform: scale(0);
+}
+
+.cross:before {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.cross:after {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+@media only screen and (max-width: 1200px) {
+    .hamburger-container {
+        flex: 0 0 150px;
+    }
+
+    .hamburger, .cross {
+        display: block;
+        width: 25px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .hamburger-container {
+        flex: 0 0 25px;
+    }
+
+    .hamburger, .cross {
+        width: 25px;
+    }
+}
+
