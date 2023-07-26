@@ -1,24 +1,45 @@
-import React from 'react';
-import './App.css';
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import Home from "./components/Home";
-import Shop from "./components/Shop";
+import React from "react";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+import Kickstarter from "./pages/Kickstarter";
+import News from "./pages/News";
+import Shop from "./pages/Shop";
 
-function App() {
-    return (
-        <Router>
-            <div className="App">
-                <Header/>
-                <Switch>
-                    <Route path={"/"} exact component={Home}/>
-                    <Route path={"/shop"} component={Shop}/>
-                </Switch>
-                <Footer/>
-            </div>
-        </Router>
-    );
-}
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/shop",
+    element: <Shop />,
+  },
+  {
+    path: "/kickstarter",
+    element: <Kickstarter />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "/news",
+    element: <News />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+]);
+
+const App = () => {
+  return (
+    <div className="App">
+      <RouterProvider router={router} />
+    </div>
+  );
+};
 
 export default App;

@@ -27,7 +27,9 @@
 }
 
 .language-dropdown {
-    padding-right: 15px;
+    text-align: center;
+    width: 75px;
+    position: relative;
 }
 
 .language-dropdown-anchor:hover {
@@ -52,7 +54,8 @@
     display: block;
     background-color: rgb(243, 243, 243);
     position: absolute;
-    top: 125px;
+    top: 50px;
+    right: 5px;
     width: 75px;
     padding: 0 15px;
     text-align: center;

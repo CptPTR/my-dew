@@ -98,9 +98,32 @@
 }
 
 @media only screen and (max-width: 1000px) {
+  .item-content h1 {
+    font-size: 5em;
+  }
+
+  .item-content h2 {
+    font-size: 3em;
+  }
+
+  .item-content button svg {
+    width: 6px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
+  .item-content h1 {
+    font-size: 3em;
+  }
+
+  .item-content h2 {
+    font-size: 2em;
+    margin-bottom: 200px;
+  }
+
+  .item-content button {
+    font-size: 1em;
+  }
 }
 
 @media only screen and (max-width: 400px) {
