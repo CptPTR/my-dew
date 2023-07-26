@@ -3,7 +3,7 @@ import { useState } from "react";
 import "./../resources/css/Shipping.css";
 
 const Shipping = () => {
-  const [isHidden, setHidden] = useState(true);
+  const [isHidden] = useState(true);
 
   return (
     <>
